@@ -109,6 +109,26 @@ _G.packer_plugins = {
     path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
   },
+  fzf = {
+    loaded = true,
+    path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\filip\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",

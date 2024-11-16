@@ -18,6 +18,8 @@ require('onedark').setup  {
         variables = 'none',
     },
 
+    highlight_linenumber= true,
+
     -- Lualine options --
     lualine = {
         transparent = false, -- lualine center bar transparency

@@ -20,6 +20,9 @@ end)
 
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+vim.keymap.set("n", "k", "kzz")
+vim.keymap.set("n", "j", "jzz")
+
 
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")

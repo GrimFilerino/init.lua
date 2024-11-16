@@ -26,3 +26,13 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.colorcolumn = "100"
+vim.opt.clipboard = 'unnamedplus'
+
+vim.opt.list = true
+
+vim.opt.listchars = { trail='^' } 
+
+vim.opt.inccommand = 'split'
+
+vim.opt.cursorline = false;
+

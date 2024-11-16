@@ -14,8 +14,6 @@ require("mason-lspconfig").setup({
 		"rust_analyzer",
 		"angularls",
 		"eslint",
-		"denols",
-		"ols",
 		"jsonls",
 		"ts_ls",
 		"html",
