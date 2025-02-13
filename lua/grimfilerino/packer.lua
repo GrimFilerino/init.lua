@@ -51,6 +51,12 @@ return require('packer').startup(function(use)
         }
     }
 
+    use({
+        "erichdongubler/lsp_lines.nvim",
+        config = function()
+            require("lsp_lines").setup()
+        end,
+    })
 
     use {
         'nvim-lualine/lualine.nvim',

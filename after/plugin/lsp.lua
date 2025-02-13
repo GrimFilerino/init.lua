@@ -6,18 +6,13 @@ local capabilities = vim.tbl_deep_extend(
 vim.lsp.protocol.make_client_capabilities(),
 cmp_lsp.default_capabilities())
 
+
 require("fidget").setup({})
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"lua_ls",
-		"rust_analyzer",
-		"angularls",
-		"eslint",
-		"jsonls",
-		"ts_ls",
-		"html",
-		"css_variables"
+        "html"
 	},
 	handlers = {
 		function(server_name) -- default handler (optional)
@@ -39,6 +34,13 @@ require("mason-lspconfig").setup({
 				}
 			}
 		end,
+        ["html"] = function()
+			local lspconfig = require("lspconfig")
+            lspconfig.html.setup({
+                filetypes = {"html","ejs"},
+                capabilities = capabilities
+            })
+        end,
 	}
 })
 
@@ -53,7 +55,7 @@ cmp.setup({
 	mapping = cmp.mapping.preset.insert({
 		['<C-b>'] = cmp.mapping.select_prev_item(cmp_select),
 		['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-		['<C-p>'] = cmp.mapping.confirm({ select = true }),
+		['<Tab>'] = cmp.mapping.confirm({ select = true }),
 		["<C-Space>"] = cmp.mapping.complete(),
 	}),
 	sources = cmp.config.sources({
