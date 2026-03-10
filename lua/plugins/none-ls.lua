@@ -7,11 +7,9 @@ return {
             sources = {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.formatting.clang_format,
-                null_ls.builtins.formatting.prettier.with({
-                    filetypes = { "html", "css", "scss", "typescript", "javascript" }
-                })
-            },
+                null_ls.builtins.formatting.prettier,
+	    },
         })
-        vim.keymap.set('n', '<leader>zf', vim.lsp.buf.format, {})
+        vim.keymap.set('n', '<leader>zn', vim.lsp.buf.format, {})
     end
 }
